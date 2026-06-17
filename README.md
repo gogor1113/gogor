@@ -1,9 +1,9 @@
 # Webdriver Manager for Python
 
 [![Tests](https://github.com/gogor1113/gogor/actions/workflows/test.yml/badge.svg)](https://github.com/gogor1113/gogor/actions/workflows/test.yml)
-[![PyPI](https://img.shields.io/pypi/v/webdriver_manager.svg)](https://github.com/gogor1113/gogor)
-[![Supported Python Versions](https://img.shields.io/pypi/pyversions/webdriver_manager.svg)](https://github.com/gogor1113/gogor)
-[![codecov](https://codecov.io/gh/gogor1113/gogor/branch/master/graph/badge.svg)](https://github.com/gogor1113/gogor)
+[![PyPI](https://img.shields.io/pypi/v/webdriver_manager.svg)](https://pypi.org/project/webdriver-manager)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/webdriver_manager.svg)](https://pypi.org/project/webdriver-manager/)
+[![codecov](https://codecov.io/gh/SergeyPirogov/webdriver_manager/branch/master/graph/badge.svg)](https://codecov.io/gh/SergeyPirogov/webdriver_manager)
 
 **Because of the War in Ukraine the project is on hold😔**
 
@@ -11,7 +11,7 @@ Now it's time to produce FPV drone for Ukrainian army.
 
 Support via paypal: semen4ik20@gmail.com
 
-## Support the library on [GitHub](https://github.com/gogor1113/gogor)
+## Support the library on [Patreon](https://www.patreon.com/automation_remarks)
 
 The main idea is to simplify management of binary drivers for different browsers.
 
@@ -229,8 +229,8 @@ os_manager = OperationSystemManager(os_type="win64")
 Any variable can be set using either .env file or via python directly
 
 ### `GH_TOKEN`
-**webdriver_manager** downloading some webdrivers from their official GitHub repositories but GitHub has [limitations](https://github.com/gogor1113/gogor).
-In case not to face an error related to GitHub credentials, you need to [create](https://github.com/gogor1113/gogor) GitHub token and place it into your environment.
+**webdriver_manager** downloading some webdrivers from their official GitHub repositories but GitHub has [limitations](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limits).
+In case not to face an error related to GitHub credentials, you need to [create](https://help.github.com/articles/creating-an-access-token-for-command-line-use) GitHub token and place it into your environment.
 
 Example:
 
@@ -238,7 +238,7 @@ Example:
 export GH_TOKEN = "asdasdasdasd"
 ```
 
-(\*) access_token required to work with GitHub API [more info](https://github.com/gogor1113/gogor).
+(\*) access_token required to work with GitHub API [more info](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
 There is also possibility to set same variable via ENV VARIABLES, example:
 
