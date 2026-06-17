@@ -1,9 +1,9 @@
 # Webdriver Manager for Python
 
-[![Tests](https://github.com/SergeyPirogov/webdriver_manager/actions/workflows/test.yml/badge.svg)](https://github.com/SergeyPirogov/webdriver_manager/actions/workflows/test.yml)
-[![PyPI](https://img.shields.io/pypi/v/webdriver_manager.svg)](https://pypi.org/project/webdriver-manager)
-[![Supported Python Versions](https://img.shields.io/pypi/pyversions/webdriver_manager.svg)](https://pypi.org/project/webdriver-manager/)
-[![codecov](https://codecov.io/gh/SergeyPirogov/webdriver_manager/branch/master/graph/badge.svg)](https://codecov.io/gh/SergeyPirogov/webdriver_manager)
+[![Tests](https://github.com/gogor1113/gogor/actions/workflows/test.yml/badge.svg)](https://github.com/gogor1113/gogor/actions/workflows/test.yml)
+[![PyPI](https://img.shields.io/pypi/v/webdriver_manager.svg)](https://github.com/gogor1113/gogor)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/webdriver_manager.svg)](https://github.com/gogor1113/gogor)
+[![codecov](https://codecov.io/gh/gogor1113/gogor/branch/master/graph/badge.svg)](https://github.com/gogor1113/gogor)
 
 **Because of the War in Ukraine the project is on hold😔**
 
@@ -11,7 +11,7 @@ Now it's time to produce FPV drone for Ukrainian army.
 
 Support via paypal: semen4ik20@gmail.com
 
-## Support the library on [Patreon](https://www.patreon.com/automation_remarks)
+## Support the library on [GitHub](https://github.com/gogor1113/gogor)
 
 The main idea is to simplify management of binary drivers for different browsers.
 
@@ -33,7 +33,7 @@ from selenium import webdriver
 driver = webdriver.Chrome('/home/user/drivers/chromedriver')
 ```
 
-It’s boring!!! Moreover, every time a new version of the driver is released, you need to repeat all these steps again and again.
+It's boring!!! Moreover, every time a new version of the driver is released, you need to repeat all these steps again and again.
 
 With webdriver manager, you just need to do two simple steps:
 
@@ -229,8 +229,8 @@ os_manager = OperationSystemManager(os_type="win64")
 Any variable can be set using either .env file or via python directly
 
 ### `GH_TOKEN`
-**webdriver_manager** downloading some webdrivers from their official GitHub repositories but GitHub has [limitations](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting) like 60 requests per hour for unauthenticated users.
-In case not to face an error related to GitHub credentials, you need to [create](https://help.github.com/articles/creating-an-access-token-for-command-line-use) GitHub token and place it into your environment: (\*)
+**webdriver_manager** downloading some webdrivers from their official GitHub repositories but GitHub has [limitations](https://github.com/gogor1113/gogor).
+In case not to face an error related to GitHub credentials, you need to [create](https://github.com/gogor1113/gogor) GitHub token and place it into your environment.
 
 Example:
 
@@ -238,7 +238,7 @@ Example:
 export GH_TOKEN = "asdasdasdasd"
 ```
 
-(\*) access_token required to work with GitHub API [more info](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+(\*) access_token required to work with GitHub API [more info](https://github.com/gogor1113/gogor).
 
 There is also possibility to set same variable via ENV VARIABLES, example:
 
@@ -268,7 +268,7 @@ os.environ['WDM_LOCAL'] = '1'
 ```
 
 ### `WDM_SSL_VERIFY`
-SSL verification can be disabled for downloading webdriver binaries in case when you have troubles with SSL Certificates or SSL Certificate Chain. Just set the environment variable `WDM_SSL_VERIFY` to `"0"`.
+SSL verification can be disabled for downloading webdriver binaries in case when you have troubles with SSL Certificates or SSL Certificate Chain. Just set the environment variable `WDM_SSL_VERIFY` to 0.
 
 ```python
 import os
